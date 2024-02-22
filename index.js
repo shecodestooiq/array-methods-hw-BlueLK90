@@ -1,19 +1,20 @@
 function processAges(ages) {
+  //Task1
   const doubledAges = []
   for (age of ages){
     doubledAges.push(age*2);
   }
   console.log(doubledAges)
-  
+  //Task2
   ages.forEach(age => {
     console.log(age);
   });
-  
+  //Task3
   const adults = ages.filter( age => {
     return age >= 18
   })
   console.log(adults)
-  
+  //Task4
   const ageStrings = ages.map( age => {
     return JSON.stringify(age)
   })
